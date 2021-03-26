@@ -1,0 +1,70 @@
+body{
+  background-color:papayawhip;
+}
+
+.Map{
+  background: url(img/map.jpg) no-repeat;
+  background-size: 100%;
+  width: 1000px;
+  height: 600px;
+  margin: auto;
+}
+
+.Enemy1 {
+  transition: all 0.2s;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  margin-left: 230px;
+  margin-top: 50px;
+}
+.Enemy1:hover {
+  transform: scale(1.5);
+}
+
+.Enemy2 {
+  transition: all 0.2s;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  margin-left: 350px;
+  margin-top: 120px;
+}
+.Enemy22 {
+  transition: all 0.2s;
+  width: 80px;
+  height: 80px;
+  margin-left: 350px;
+  margin-top: 120px;
+  filter: grayscale();
+}
+.Enemy2:hover {
+  transform: scale(1.5);
+}
+
+.QA{
+  background: url(img/QaA.jpg) no-repeat;
+  margin: auto;
+  background-size: 100%;
+  width: 600px;
+  height: 490px;
+}
+
+.pT{
+  text-align: center;
+  padding-top: 10px;
+}
+.pQ{
+  text-align: center;
+  padding-top: 10px;
+}
+
+.B1,.B2,.B3,.B4{
+  text-align: center;
+  margin: 40px;
+}
+.B1N,.B2N,.B3N,.B4N{
+  display: none;
+}
+
+
