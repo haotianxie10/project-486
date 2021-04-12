@@ -37,6 +37,15 @@ const AirP = function () {
     window.localStorage.setItem('airP', parseInt(airP) + 1)
     B1B.onclick = AirP
   }
+  const Awrong = function () {
+    pT.innerHTML = 'Oh no!'
+    pQ.innerHTML = 'your answer is wrong'
+    B1B.innerHTML = 'try agains!'
+    B2N.className = 'B2N'
+    B3N.className = 'B3N'
+    B4N.className = 'B4N'
+    B1B.onclick = AirP
+  }
   // when finish a part!
   const Finished = function () {
     const airP = window.localStorage.getItem('airP')
@@ -59,11 +68,14 @@ const AirP = function () {
     pT.innerHTML = 'Air pollution'
     pQ.innerHTML = 'Q1.The main cause of air pollution'
     B1B.innerHTML = 'Industry, transportation, and forest fires.'
-    B2B.innerHTML = 'Human breath'
-    B3B.innerHTML = 'No garbage sorting'
-    B4B.innerHTML = 'chemistry experiment'
+    B2B.innerHTML = 'transportation'
+    B3B.innerHTML = 'forest fires'
+    B4B.innerHTML = 'All of the above'
     window.localStorage.setItem('airP', '1')
-    B1B.onclick = Aright
+    B1B.onclick = Awrong
+    B2B.onclick = Awrong
+    B3B.onclick = Awrong
+    B4B.onclick = Aright
   } else if (airP === '2') {
     B1N.className = 'B1'
     B2N.className = 'B2'
@@ -71,12 +83,15 @@ const AirP = function () {
     B4N.className = 'B4'
     // quesiton part
     pT.innerHTML = 'Air pollution'
-    pQ.innerHTML = 'Q2.The main cause of air pollution'
-    B1B.innerHTML = 'Industry, transportation, and forest fires.'
-    B2B.innerHTML = 'Human breath'
-    B3B.innerHTML = 'No garbage sorting'
-    B4B.innerHTML = 'chemistry experiment'
-    B1B.onclick = Aright
+    pQ.innerHTML = 'Q2.The harm caused by air pollution'
+    B1B.innerHTML = 'Harm to the human body'
+    B2B.innerHTML = 'Harm to industrial and agricultural production.'
+    B3B.innerHTML = 'Hazard to weather and climate.'
+    B4B.innerHTML = 'All of the above'
+    B1B.onclick = Awrong
+    B2B.onclick = Awrong
+    B3B.onclick = Awrong
+    B4B.onclick = Aright
   } else if (airP === '3') {
     B1N.className = 'B1'
     B2N.className = 'B2'
@@ -84,12 +99,15 @@ const AirP = function () {
     B4N.className = 'B4'
     // quesiton part
     pT.innerHTML = 'Air pollution'
-    pQ.innerHTML = 'Q3.The main cause of air pollution'
-    B1B.innerHTML = 'Industry, transportation, and forest fires.'
-    B2B.innerHTML = 'Human breath'
-    B3B.innerHTML = 'No garbage sorting'
-    B4B.innerHTML = 'chemistry experiment'
+    pQ.innerHTML = 'Q3.Air pollution prevention and control measures'
+    B1B.innerHTML = 'Reform the energy structure and use more pollution-free energy'
+    B2B.innerHTML = 'Reduce solid waste discharge'
+    B3B.innerHTML = 'garbage sorting'
+    B4B.innerHTML = 'All of the above'
     B1B.onclick = Aright
+    B2B.onclick = Awrong
+    B3B.onclick = Awrong
+    B4B.onclick = Awrong
   } else if (airP === '4') {
     B1N.className = 'B1'
     B2N.className = 'B2'
@@ -97,12 +115,15 @@ const AirP = function () {
     B4N.className = 'B4'
     // quesiton part
     pT.innerHTML = 'Air pollution'
-    pQ.innerHTML = 'Q4.The main cause of air pollution'
-    B1B.innerHTML = 'Industry, transportation, and forest fires.'
-    B2B.innerHTML = 'Human breath'
-    B3B.innerHTML = 'No garbage sorting'
-    B4B.innerHTML = 'chemistry experiment'
-    B1B.onclick = Aright
+    pQ.innerHTML = 'Q4.How many levels is AQI divided into?'
+    B1B.innerHTML = '4'
+    B2B.innerHTML = '5'
+    B3B.innerHTML = '6'
+    B4B.innerHTML = '7'
+    B1B.onclick = Awrong
+    B2B.onclick = Awrong
+    B3B.onclick = Aright
+    B4B.onclick = Awrong
   } else if (airP === '5') {
     B1N.className = 'B1'
     B2N.className = 'B2'
@@ -110,12 +131,15 @@ const AirP = function () {
     B4N.className = 'B4'
     // quesiton part
     pT.innerHTML = 'Air pollution'
-    pQ.innerHTML = 'Q5.The main cause of air pollution'
-    B1B.innerHTML = 'Industry, transportation, and forest fires.'
-    B2B.innerHTML = 'Human breath'
-    B3B.innerHTML = 'No garbage sorting'
-    B4B.innerHTML = 'chemistry experiment'
-    B1B.onclick = Finished
+    pQ.innerHTML = 'Q5.When the AQI index reaches what range, air pollution belongs to the unhealthy level'
+    B1B.innerHTML = '51-100'
+    B2B.innerHTML = '101-150'
+    B3B.innerHTML = '151-200'
+    B4B.innerHTML = '201-300'
+    B1B.onclick = Awrong
+    B2B.onclick = Awrong
+    B3B.onclick = Finished
+    B4B.onclick = Awrong
   } else if (airP === '6') {
     B1N.className = 'B1N'
     B2N.className = 'B2N'
